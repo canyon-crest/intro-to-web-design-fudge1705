@@ -1,8 +1,23 @@
 body{
+    margin: 0;
     background-color: pink;
     color: white;
     font-family: ;
 }
+
+#container{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: black;
+    padding: 30px;
+    border-left: double white 5px;
+    border-right: double white 5px;
+}
+h1{
+    background-color: aqua;
+    border: 4px groove white
+}
+h2{}
 p{
     line-height: 2.25em;
     
@@ -13,5 +28,62 @@ img {
     border: solid 3px red;
     border-radius: 9px;
     margin-right: 20px;
+}
+a:link{
+    font-weight: bold;
+    color: red text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color:yellow;
+}
+img:hover{
+    border-color: yellow;
+    box-shadow: .5px .5px 5px yellow;
+}
+#sidebar{
+    background-color: rebeccapurple;
+    border: solid white 3px;
+    padding: 20px;
+    width: 170px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#sidebar h3{
+    padding: 5px;
+    border-width: 5px;
+    padding-left: 20px;
+    border-right-color: yellow;
+    border-right-style:solid;
+    text-align: center;
+}
+ui{
+    line-height: 2cm;
+}
 
+@media (max-width:1200px){
+    #container{
+        width: 800px;
+    }
+}
+
+@media (max-width:992px){
+    #conatiner{
+        width: 100%;
+        margin:0;
+        padding:0;
+        border:none;
+    }
+    body{
+        padding:20px;
+        background-color: black;
+    }
+}
+@media (max-width:768px){
+    #sidebar{
+        display:none;
+    }
 }
